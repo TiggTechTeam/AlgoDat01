@@ -1,0 +1,4 @@
+public interface Sorter {
+    public double[] sort(double[] a);
+    public int getComparisonCount();
+}
