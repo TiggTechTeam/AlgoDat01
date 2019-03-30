@@ -1,0 +1,28 @@
+
+import java.util.Arrays;
+
+public class Main {
+
+    private static void printArray(double[] list) {
+        for (int i = 0; i < list.length; i++) {
+            System.out.print(list[i] + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+
+        InsertionSorter insertionSorter = new InsertionSorter();
+
+        double[] inputList = {5, 2, 1, 6, 3, 4,22,4,4,4,4,2342,3};
+
+        printArray(inputList);
+        double[] outputList = insertionSorter.sort(inputList);
+
+        printArray(outputList);
+
+
+    }
+}
+
+
