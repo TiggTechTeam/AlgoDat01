@@ -1,0 +1,34 @@
+public class MainMethod {
+
+	public static void main(String[] args) {
+	
+		
+	}
+		public static int[] intArr = { 16, 23, 14, 7, 21, 20, 6, 1, 17, 13, 12, 9, 
+		            3, 19 }; 
+
+	 
+		//Merge Sort Test Method
+		public int[] Mergesort(int l, int r) { 
+		         
+		        if (l < r) { 
+		            int q = (l + r) / 2; 
+		             
+		            sort(l, q); 
+		            sort(q + 1, r); 
+		            merge(l, q, r); 
+		        } 
+		        return intArr; 
+		    }
+		
+//		 instertion sort TestMethod I.
+		 insertionSort(test);
+		 for(int i = 0;i<test.length;i++){
+			System.out.print(test[i]+" ");
+		 }
+		 System.out.println();
+		 
+		
+		}
+	}
+
