@@ -2,7 +2,7 @@ public class Mergesort implements Sorter {
 
   
 
-    private void merge(int l, int q, int r) { 
+    public void merge(int l, int q, int r) { 
         int[] arr = new int[intArr.length]; 
         int i, j; 
         for (i = l; i <= q; i++) { 
