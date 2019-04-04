@@ -1,25 +1,24 @@
 public class MergeSorter implements Sorter {
     private int comparisionCount = 0;
 
-    @Override
     public double[] sorter(double[] arr, int l, int q, int r) {
     	
-    	   double[] arr1 = new double[arr1.length]; 
+    	   double[] arr = new double[arr.length]; 
            int i, j; 
            for (i = l; i <= q; i++) { 
-               arr1[i] = arr1[i]; 
+               arr[i] = arr[i]; 
            } 
            for (j = q + 1; j <= r; j++) { 
-               arr1[r + q + 1 - j] = arr1[j]; 
+               arr[r + q + 1 - j] = arr[j]; 
            } 
            i = l; 
            j = r; 
            for (int k = l; k <= r; k++) { 
-               if (arr1[i] <= arr1[j]) { 
-                   arr1[k] = arr1[i]; 
+               if (arr[i] <= arr[j]) { 
+                   arr[k] = arr[i]; 
                    i++; 
                } else { 
-                   arr1[k] = arr1[j]; 
+                   arr[k] = arr[j]; 
                    j--; 
                } 
            }
@@ -40,4 +39,3 @@ public class MergeSorter implements Sorter {
 		return null;
 	}
 }
-
